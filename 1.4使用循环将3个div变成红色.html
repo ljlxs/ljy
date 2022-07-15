@@ -1,0 +1,62 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        text-align: center;
+    }
+
+    .box {
+        margin: 0 auto;
+        display: flex;
+        width: 300px;
+    }
+
+    .one {
+        width: 100px;
+        height: 70px;
+        background: #000;
+        margin: 10px;
+    }
+
+    .two {
+        width: 100px;
+        height: 70px;
+        background: #000;
+        margin: 10px;
+    }
+
+    .san {
+        width: 100px;
+        height: 70px;
+        background: #000;
+        margin: 10px;
+    }
+</style>
+
+<body>
+    <button class="btn">变红</button>
+    <div class="box">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="san"></div>
+    </div>
+</body>
+<script>
+    let one = document.querySelector('.one')
+    let two = document.querySelector('.two')
+    let san = document.querySelector('.san')
+    let btn = document.querySelector('.btn')
+    btn.onclick = function () {
+        one.style.background = 'red'
+        two.style.background = 'red'
+        san.style.background = 'red'
+    }
+</script>
+
+</html>

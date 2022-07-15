@@ -1,0 +1,90 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    ul li {
+
+        margin: 10px;
+    }
+
+    ol {
+        display: flex;
+        width: 300px;
+    }
+
+    ol li {
+        flex: 1;
+        border: 1px solid green;
+        color: green;
+        text-align: center;
+    }
+
+    .red {
+        width: 20px;
+        height: 20px;
+        background: red;
+    }
+
+    .green {
+        width: 20px;
+        height: 20px;
+        background: green;
+    }
+
+    .black {
+        width: 20px;
+        height: 20px;
+        background: black;
+    }
+</style>
+
+<body>
+    <ul>
+        <li class="red"></li>
+        <li class="green"></li>
+        <li class="black"></li>
+    </ul>
+    <ol>
+        <li class="li">新闻</li>
+        <li class="li">娱乐</li>
+        <li class="li">体育</li>
+        <li class="li">电影</li>
+        <li class="li">音乐</li>
+        <li class="li">旅游</li>
+    </ol>
+</body>
+<script>
+    let red = document.querySelector('.red')
+    let green = document.querySelector('.green')
+    let black = document.querySelector('.black')
+    let body = document.querySelector('body')
+    red.onclick = function () {
+        body.style.background = 'red'
+    }
+    green.onclick = function () {
+        body.style.background = 'green'
+    }
+    black.onclick = function () {
+        body.style.background = 'black'
+    }
+</script>
+
+</html>

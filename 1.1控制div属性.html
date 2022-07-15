@@ -1,0 +1,63 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        text-align: center;
+    }
+
+    button {
+        margin: 20px 5px;
+    }
+
+    .box {
+        width: 100px;
+        height: 100px;
+        background: #000;
+        margin: 0 auto;
+    }
+</style>
+
+<body>
+    <button class="width">变宽</button>
+    <button class="height">变高</button>
+    <button class="background">变色</button>
+    <button class="display">隐藏</button>
+    <button class="one">重置</button>
+    <div class="box">
+
+    </div>
+</body>
+<script>
+    let box = document.querySelector('.box')
+    let width = document.querySelector('.width')
+    let height = document.querySelector('.height')
+    let background = document.querySelector('.background')
+    let display = document.querySelector('.display')
+    let one = document.querySelector('.one')
+    width.onclick = function cd() {
+        box.style.width = "200px"
+    }
+    height.onclick = function cd() {
+        box.style.height = "200px"
+    }
+    background.onclick = function cd() {
+        box.style.background = "red"
+    }
+    display.onclick = function cd() {
+        box.style.display = "none"
+    }
+    one.onclick = function cd() {
+        box.style.width = "100px"
+        box.style.height = "100px"
+        box.style.background = "#000"
+        box.style.display = "block"
+    }
+</script>
+
+</html>
